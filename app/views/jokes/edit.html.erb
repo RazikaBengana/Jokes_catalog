@@ -1,0 +1,34 @@
+<div class="content">
+  <h2>Edit the joke</h2>
+
+  <%= form_with model: @joke, local: true do |form| %>
+
+    <% if @joke.errors.any? %>
+      <div class="error-messages">
+        <h2 class="error-title">An error has occurred</h2>
+        <div>
+          <% @joke.errors.full_messages.each do |msg| %>
+            <div class="error-detail"><%= msg %></div>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+
+    <p>
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </p>
+    <p>
+      <%= form.label :content %>
+      <%= form.text_area :content %>
+    </p>
+    <p>
+      <%= form.label :author %>
+      <%= form.text_field :author %>
+    </p>
+    <p>
+      <%= form.submit "Edit your joke" %>
+    </p>
+
+  <% end %>
+</div>

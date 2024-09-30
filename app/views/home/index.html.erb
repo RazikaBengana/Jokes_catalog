@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jokes Catalog</title>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <%= image_tag 'logo.png', alt: 'Site Logo', width: '150' %>
+    </div>
+    <h1>Welcome to Jokes Catalog!</h1>
+  </div>
+</header>
+
+<div class="content">
+  <h2>Your daily dose of laughter!</h2>
+  <p>Looking for a quick laugh? You've come to the right place! <br>
+    Jokes Catalog is a collection of the funniest jokes from around the web. <br>
+    Whether you like puns, one-liners, or classic jokes, we've got something for everyone.</p>
+
+  <div class="cat-image">
+    <%= image_tag 'laughing-cat.jpg', alt: 'Laughing Cat', width: '400' %>
+  </div>
+
+  <div class="no-center">
+    <h2>What's inside?</h2>
+    <ul>
+      <li><strong>Puns:</strong> Get ready for the best wordplay!</li>
+      <li><strong>Dad Jokes:</strong> So bad they're good.</li>
+      <li><strong>Knock-Knock Jokes:</strong> Because who's there?</li>
+      <li><strong>Random Fun:</strong> A mix of jokes that will surprise you!</li>
+    </ul>
+  </div>
+
+  <p>Feel free to explore, laugh, and share your favorite jokes with friends!</p>
+  <br>
+  <a href="/jokes" class="cta-button">Browse Jokes Now</a>
+  <br>
+</div>
+
+<footer>
+  <p>&copy; 2024 Jokes Catalog. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

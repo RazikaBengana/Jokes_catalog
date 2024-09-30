@@ -1,0 +1,30 @@
+<div class="content">
+  <h2>All Jokes</h2>
+
+  <%= link_to "Go back to Home", root_path, class: "home-button" %>
+
+  <br>
+  <br>
+
+  <div><%= link_to "Publish a new joke", new_joke_path(), class: "cta-button" %></div>
+
+  <br>
+  <br>
+
+  <% @jokes.each do |joke| %>
+    <div><strong>Name:</strong> <%= joke.name %></div>
+    <br>
+    <div><strong>Content:</strong> <%= joke.content %></div>
+    <br>
+    <div><strong>Published by:</strong> <%= joke.author %></div>
+    <br>
+    <br>
+    <div><%= link_to "See the joke", joke_path(joke), class: "cta-button" %></div>
+    <br>
+    <div><%= link_to "Edit the joke", edit_joke_path(joke), class: "cta-button" %></div>
+    <br>
+    <div><%= button_to "Delete the joke", joke_path(joke), method: :delete, class: "delete-button" %></div>
+    <br>
+    <hr>
+  <% end %>
+</div>
