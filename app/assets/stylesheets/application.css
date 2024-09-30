@@ -13,3 +13,174 @@
  *= require_tree .
  *= require_self
  */
+
+.field_with_errors{
+    color: red;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+h2 {
+    color: #555;
+}
+
+.content {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.no-center {
+    text-align: left; /* Désactive le centrage */
+    margin-left: 20px; /* Optionnel : pour un petit retrait à gauche */
+}
+
+.home-button {
+    display: inline-block;
+    background-color: lightgreen;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Orange style for the "Delete the joke" button */
+.delete-button {
+    display: inline-block;
+    background-color: darkorange;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: darkorange; /* Optional: Darker orange on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.cat-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.field_with_errors {
+    color: red;
+}
+
+/* Form styling for edit/new pages */
+form p {
+    text-align: left;
+}
+
+form p label {
+    font-weight: bold;
+}
+
+form p input,
+form p textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+form p input[type="submit"] {
+    width: auto;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+hr {
+    border: 1px solid #ddd;
+}
+
+/* Styling the error message container */
+.error-messages {
+    border: 2px solid red; /* Red border around the error box */
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #ffe6e6; /* Light red background */
+    border-radius: 5px;
+}
+
+/* Styling the error title */
+.error-title {
+    color: red; /* Red color for the "An error has occurred" title */
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Styling the individual error details */
+.error-detail {
+    color: red; /* Red color for the "Content can't be blank" and "Author can't be blank" */
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center; /* Centers the content */
+    align-items: center; /* Aligns items vertically */
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 0; /* Keeps the logo to the left */
+}
+
+.title {
+    margin: 0 auto; /* Ensures the title stays centered */
+}
+
+
+
+
