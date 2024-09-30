@@ -146,7 +146,7 @@ rails server
 
 <br>
 
-- Visit `http://localhost:3000` in your web browser
+- Visit [http://localhost:3000](http://localhost:3000) in your web browser
 
 <br>
 
