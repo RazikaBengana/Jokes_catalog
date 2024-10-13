@@ -163,7 +163,7 @@ rails server
 
 <br>
 
-### Services
+### Services:
 
 <br>
 
@@ -172,7 +172,7 @@ rails server
 <br>
 <br>
 
-### Deployment Instructions
+### Deployment Instructions:
 
 <br>
 
