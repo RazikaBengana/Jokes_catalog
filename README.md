@@ -27,7 +27,7 @@
 <a href="https://github.com/RazikaBengana/Jokes_catalog#computer-requirements">Requirements</a> •
 <a href="https://github.com/RazikaBengana/Jokes_catalog#package-installation">Installation</a> •
 <a href="https://github.com/RazikaBengana/Jokes_catalog#keyboard-basic-usage">Basic Usage</a> •
-<a href="https://github.com/RazikaBengana/Jokes_catalog#pushpin-more info">More info</a> •
+<a href="https://github.com/RazikaBengana/Jokes_catalog#pushpin-more info">More Info</a> •
 <a href="https://github.com/RazikaBengana/Jokes_catalog#bust_in_silhouette-authors">Authors</a> •
 <a href="https://github.com/RazikaBengana/Jokes_catalog#octocat-license">License</a>
 </h3>
@@ -172,7 +172,7 @@ rails server
 <br>
 <br>
 
-### Deployment Instructions:
+### Deployment instructions:
 
 <br>
 
