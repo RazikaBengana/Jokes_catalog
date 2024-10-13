@@ -22,14 +22,14 @@
 
 
 <h3 align="center">
-<a href="https://github.com/RazikaBengana/Jokes_catalog/tree/main/#eye-about">About</a> •
-<a href="https://github.com/RazikaBengana/Jokes_catalog/tree/main/#memo-learning-objectives">Learning Objectives</a> •
-<a href="https://github.com/RazikaBengana/Jokes_catalog/tree/main/#computer-requirements">Requirements</a> •
-<a href="https://github.com/RazikaBengana/Jokes_catalog/tree/main/#package-installation">Installation</a> •
-<a href="https://github.com/RazikaBengana/Jokes_catalog/tree/main/#keyboard-basic-usage">Basic usage</a> •
-<a href="https://github.com/RazikaBengana/Jokes_catalog/tree/main/#pushpin-more info">More info</a> •
-<a href="https://github.com/RazikaBengana/Jokes_catalog/tree/main/#bust_in_silhouette-authors">Authors</a> •
-<a href="https://github.com/RazikaBengana/Jokes_catalog/tree/main/#octocat-license">License</a>
+<a href="https://github.com/RazikaBengana/Jokes_catalog#eye-about">About</a> •
+<a href="https://github.com/RazikaBengana/Jokes_catalog#memo-learning-objectives">Learning Objectives</a> •
+<a href="https://github.com/RazikaBengana/Jokes_catalog#computer-requirements">Requirements</a> •
+<a href="https://github.com/RazikaBengana/Jokes_catalog#package-installation">Installation</a> •
+<a href="https://github.com/RazikaBengana/Jokes_catalog#keyboard-basic-usage">Basic Usage</a> •
+<a href="https://github.com/RazikaBengana/Jokes_catalog#pushpin-more info">More info</a> •
+<a href="https://github.com/RazikaBengana/Jokes_catalog#bust_in_silhouette-authors">Authors</a> •
+<a href="https://github.com/RazikaBengana/Jokes_catalog#octocat-license">License</a>
 </h3>
 
 ---
