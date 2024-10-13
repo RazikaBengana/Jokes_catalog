@@ -56,7 +56,7 @@ The app includes pages for listing all jokes, viewing individual jokes, creating
 
 <!-- ------------------------------------------------------------------------------------------------- -->
 
-## :memo: Learning objectives
+## :memo: Learning Objectives
 
 <br>
 
