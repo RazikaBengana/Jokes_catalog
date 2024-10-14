@@ -47,6 +47,7 @@
 
 **`Jokes Catalog`** is a `Ruby on Rails` application that implements a joke catalog with `CRUD` functionality using RESTful conventions: `GET` for viewing, `POST` for creating, `PUT` for updating, and `DELETE` for removing jokes.
 <br>
+<br>
 The app includes pages for listing all jokes, viewing individual jokes, creating new jokes, editing existing jokes, and a home page, all following the `MVC` architecture.
 
 </div>
@@ -100,11 +101,17 @@ The app includes pages for listing all jokes, viewing individual jokes, creating
 
 <br>
 
-- Clone the repository
+#### Clone the repository:
 
 <br>
 
-- Install dependencies:
+```yaml
+git clone https://github.com/RazikaBengana/Jokes_catalog.git
+```
+
+<br>
+
+#### Install dependencies:
 
 <br>
 
@@ -114,18 +121,113 @@ bundle install
 
 <br>
 
-- Set up the database:
+#### Configure the database:
 
-    - Ensure `PostgreSQL` is installed and running
-    - Configure database settings in `config/database.yml` if necessary (`username` & `password`)
+    - Ensure [`PostgreSQL`](https://www.postgresql.org/download/) is installed and running
+    - Open the `config/database.yml` file and configure it for `PostgreSQL`. <br>
+      Replace any `SQLite3` configurations with `PostgreSQL` settings. 
+      Here is an example configuration:
 
 <br>
+
+```yaml
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: your_postgresql_username
+  password: your_postgresql_password
+  host: localhost
+
+development:
+  <<: *default
+  database: jokes_catalog_development
+
+test:
+  <<: *default
+  database: jokes_catalog_test
+
+production:
+  <<: *default
+  database: jokes_catalog_production
+  username: your_production_username
+  password: your_production_password
+```
+
+<br>
+
+- Replace with your actual `PostgreSQL` credentials:
+
+  - `your_postgresql_username`
+  - `your_postgresql_password`
+  - `your_production_username`
+  - `your_production_password`
+
+<br>
+<br>
+
+#### Set up the database:
+
+<br>
+
+- Use the following commands to create the database, run migrations, and seed the database with initial data. <br>
+  This prepares the database schema and populates it with any default data needed for the application:
 
 ```yaml
 rails db:create
 rails db:migrate
 rails db:seed
 ```
+
+<br>
+
+#### Interact with the database:
+
+<br>
+
+- To open the `Rails` console for database interaction:
+
+<br>
+
+```yaml
+rails console
+```
+
+<br>
+
+- To run a specific migration:
+
+<br>
+
+```yaml
+rails db:migrate:up VERSION=20210101010101
+```
+
+<br>
+
+- To rollback the last migration:
+
+<br>
+
+```yaml
+rails db:rollback
+```
+
+<br>
+
+- To reset the database:
+
+<br>
+
+```yaml
+rails db:reset
+```
+
+<br>
+<br>
+
+These steps should help you set up the application and interact with the database effectively. <br>
+If you encounter any issues, ensure that `PostgreSQL` is correctly installed and that your `database.yml` file is properly configured.
 
 <br>
 <br>
