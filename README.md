@@ -5,7 +5,6 @@
 
 </div>
 
-
 <p align="center">
 <img src="https://img.shields.io/badge/-RUBY-darkred">
 <img src="https://img.shields.io/badge/-HTML-yellow">
