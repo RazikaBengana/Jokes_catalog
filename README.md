@@ -5,6 +5,7 @@
 
 </div>
 
+
 <p align="center">
 <img src="https://img.shields.io/badge/-RUBY-darkred">
 <img src="https://img.shields.io/badge/-HTML-yellow">
@@ -83,7 +84,7 @@ The app includes pages for listing all jokes, viewing individual jokes, creating
 
 ```diff
 
-+ Ruby 3.2.0
++ Ruby 3.2.0 (managed with rbenv)
 
 + Rails 7.0.4
 
@@ -97,6 +98,67 @@ The app includes pages for listing all jokes, viewing individual jokes, creating
 <!-- ------------------------------------------------------------------------------------------------- -->
 
 ## :package: Installation
+
+<br>
+
+#### Install `rbenv` and `Ruby`:
+
+<br>
+
+- First, you'll need to install `rbenv`, a `Ruby` version management tool:
+
+<br>
+
+- On `macOS` with `Homebrew`:
+
+<br>
+
+```yaml
+brew install rbenv
+```
+
+<br>
+
+- On `Linux`:
+
+<br>
+
+```yaml
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+<br>
+
+- Install `Ruby 3.2.0` using `rbenv`:
+
+<br>
+
+```yaml
+rbenv install 3.2.0
+```
+
+<br>
+
+- Set the local `Ruby` version for this project:
+
+<br>
+
+```yaml
+rbenv local 3.2.0
+```
+
+<br>
+
+- Verify the `Ruby` version:
+
+<br>
+
+```yaml
+ruby --version
+```
 
 <br>
 
@@ -162,7 +224,6 @@ production:
   - `your_production_username`
   - `your_production_password`
 
-<br>
 <br>
 
 #### Set up the database:
