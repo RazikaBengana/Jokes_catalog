@@ -84,7 +84,7 @@ The app includes pages for listing all jokes, viewing individual jokes, creating
 
 ```diff
 
-+ Ruby 3.2.0 (managed with rbenv)
++ Ruby 3.2.0 (via RubyInstaller on Windows or using rbenv for Linux/Mac)
 
 + Rails 7.0.4
 
@@ -101,68 +101,188 @@ The app includes pages for listing all jokes, viewing individual jokes, creating
 
 <br>
 
-#### Install `rbenv` and `Ruby`:
+### :white_check_mark: Install `Ruby`:
 
 <br>
 
-- First, you'll need to install `rbenv`, a `Ruby` version management tool:
+<details>
+  <summary><mark>&nbsp; <strong>On macOS</strong> &nbsp;</mark></summary>
+
+<br>
+<br>
+
+- Install `Homebrew` (if not installed):
 
 <br>
 
-- On `macOS` with `Homebrew`:
+  ```bash
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  ```
 
 <br>
 
-```yaml
-brew install rbenv
-```
+- Install `rbenv`, a `Ruby` version management tool:
 
 <br>
 
-- On `Linux`:
+  ```yaml
+  brew install rbenv
+  ```
 
 <br>
 
-```yaml
-git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-source ~/.bashrc
-```
+- Configure `rbenv` to add it to your shell:
 
 <br>
 
-- Install `Ruby 3.2.0` using `rbenv`:
+  ```bash
+  echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
+  echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+  source ~/.zshrc
+  ```
 
 <br>
 
-```yaml
-rbenv install 3.2.0
-```
+- Install `Ruby 3.2.0`:
 
 <br>
 
-- Set the local `Ruby` version for this project:
+  ```yaml
+  rbenv install 3.2.0
+  ```
 
 <br>
 
-```yaml
-rbenv local 3.2.0
-```
+- Set it as the local version for this project:
 
 <br>
 
-- Verify the `Ruby` version:
+  ```bash
+  rbenv local 3.2.0
+  ```
 
 <br>
 
-```yaml
-ruby --version
-```
+- Verify `Ruby` installation:
 
 <br>
 
-#### Clone the repository:
+  ```yaml
+  ruby -v
+  ```
+
+<br>
+<br>
+
+</details>
+
+<br>
+
+<details>
+  <summary><mark>&nbsp; <strong>On Windows</strong> &nbsp;</mark></summary>
+
+<br>
+<br>
+
+- Install `Ruby` via `RubyInstaller`:
+
+  - Go to the [RubyInstaller](https://rubyinstaller.org/) website
+
+  - Download the desired `Ruby` version (`3.2.0`) with `Devkit` (which includes tools for building native `gem` extensions)
+
+  - During installation, check the option to **add Ruby executables to your PATH**
+
+  - After installation, follow the prompt to set up `MSYS2`, which provides the necessary development tools
+
+<br>
+
+- Verify `Ruby` installation by checking the correct version:
+
+<br>
+
+  ```yaml
+  ruby -v
+  ```
+
+<br>
+<br>
+
+</details>
+
+<br>
+
+<details>
+  <summary><mark>&nbsp; <strong>On Linux</strong> &nbsp;</mark></summary>
+
+<br>
+<br>
+
+- Install `rbenv`:
+
+<br>
+
+  ```bash
+  git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+  ```
+
+<br>
+
+- Configure `rbenv` to add it to your shell:
+
+<br>
+
+  ```bash
+  echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+  echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+  source ~/.bashrc
+  ```
+
+<br>
+
+- Install `ruby-build`, the plugin that helps install `Ruby` versions:
+
+<br>
+
+  ```bash
+  git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+  ```
+
+<br>
+
+- Install `Ruby 3.2.0`:
+
+<br>
+
+  ```yaml
+  rbenv install 3.2.0
+  ```
+
+<br>
+
+- Set `Ruby 3.2.0` as the local version for your project:
+
+<br>
+
+  ```bash
+  rbenv local 3.2.0
+  ```
+
+<br>
+
+- Verify `Ruby` installation:
+
+<br>
+
+  ```yaml
+  ruby -v
+  ```
+
+</details>
+
+<br>
+<br>
+
+### :white_check_mark: Clone the repository:
 
 <br>
 
@@ -172,22 +292,54 @@ git clone https://github.com/RazikaBengana/Jokes_catalog.git
 
 <br>
 
-#### Install dependencies:
+- Navigate into the project directory:
 
 <br>
 
 ```yaml
+cd Jokes_catalog
+```
+
+<br>
+<br>
+
+### :white_check_mark: Install dependencies:
+
+<br>
+
+- Install the necessary `Ruby gems` specified in the `Gemfile` with `bundler`. <br>
+  This ensures that all required libraries are available for the application to run:
+
+<br>
+
+```yaml
+gem install bundler
+
 bundle install
 ```
 
 <br>
 
-#### Configure the database:
+- Install `rails` to create and run the application framework:
 
-    - Ensure [`PostgreSQL`](https://www.postgresql.org/download/) is installed and running
-    - Open the `config/database.yml` file and configure it for `PostgreSQL`. <br>
-      Replace any `SQLite3` configurations with `PostgreSQL` settings. 
-      Here is an example configuration:
+<br>
+
+```yaml
+gem install rails
+```
+
+<br>
+<br>
+
+### :white_check_mark: Configure the database:
+
+<br>
+
+- Ensure [PostgreSQL](https://www.postgresql.org/download/) is installed and running on your system
+
+- Open the `config/database.yml` file and configure it for `PostgreSQL`
+
+  - Replace any `SQLite3` configurations with `PostgreSQL` settings:
 
 <br>
 
@@ -225,13 +377,16 @@ production:
   - `your_production_password`
 
 <br>
+<br>
 
-#### Set up the database:
+### :white_check_mark: Set up the database:
 
 <br>
 
-- Use the following commands to create the database, run migrations, and seed the database with initial data. <br>
+- Use the following commands to **create the database**, **run migrations**, and **seed the database with initial data**. <br>
   This prepares the database schema and populates it with any default data needed for the application:
+
+<br>
 
 ```yaml
 rails db:create
@@ -240,8 +395,9 @@ rails db:seed
 ```
 
 <br>
+<br>
 
-#### Interact with the database:
+### :white_check_mark: Interact with the database:
 
 <br>
 
@@ -286,8 +442,11 @@ rails db:reset
 <br>
 <br>
 
-These steps should help you set up the application and interact with the database effectively. <br>
-If you encounter any issues, ensure that `PostgreSQL` is correctly installed and that your `database.yml` file is properly configured.
+- These steps should help you set up the application and interact with the database effectively.
+
+<br>
+
+- If you encounter any issues, ensure that `PostgreSQL` is correctly installed and that your `database.yml` file is properly configured.
 
 <br>
 <br>
